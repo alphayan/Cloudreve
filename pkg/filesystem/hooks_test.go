@@ -3,6 +3,13 @@ package filesystem
 import (
 	"context"
 	"errors"
+	"io"
+	"io/ioutil"
+	"net/http"
+	"os"
+	"strings"
+	"testing"
+
 	"github.com/DATA-DOG/go-sqlmock"
 	model "github.com/HFO4/cloudreve/models"
 	"github.com/HFO4/cloudreve/pkg/cache"
@@ -14,12 +21,6 @@ import (
 	"github.com/jinzhu/gorm"
 	"github.com/stretchr/testify/assert"
 	testMock "github.com/stretchr/testify/mock"
-	"io"
-	"io/ioutil"
-	"net/http"
-	"os"
-	"strings"
-	"testing"
 )
 
 func TestGenericBeforeUpload(t *testing.T) {

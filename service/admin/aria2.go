@@ -1,9 +1,10 @@
 package admin
 
 import (
+	"net/url"
+
 	"github.com/HFO4/cloudreve/pkg/aria2"
 	"github.com/HFO4/cloudreve/pkg/serializer"
-	"net/url"
 )
 
 // Aria2TestService aria2连接测试服务

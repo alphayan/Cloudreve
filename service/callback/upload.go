@@ -3,6 +3,8 @@ package callback
 import (
 	"context"
 	"fmt"
+	"strings"
+
 	"github.com/HFO4/cloudreve/pkg/filesystem"
 	"github.com/HFO4/cloudreve/pkg/filesystem/driver/cos"
 	"github.com/HFO4/cloudreve/pkg/filesystem/driver/local"
@@ -11,7 +13,6 @@ import (
 	"github.com/HFO4/cloudreve/pkg/serializer"
 	"github.com/HFO4/cloudreve/pkg/util"
 	"github.com/gin-gonic/gin"
-	"strings"
 )
 
 // CallbackProcessService 上传请求回调正文接口

@@ -2,6 +2,9 @@ package filesystem
 
 import (
 	"context"
+	"os"
+	"testing"
+
 	"github.com/DATA-DOG/go-sqlmock"
 	model "github.com/HFO4/cloudreve/models"
 	"github.com/HFO4/cloudreve/pkg/auth"
@@ -12,8 +15,6 @@ import (
 	"github.com/HFO4/cloudreve/pkg/util"
 	"github.com/jinzhu/gorm"
 	"github.com/stretchr/testify/assert"
-	"os"
-	"testing"
 )
 
 func TestFileSystem_AddFile(t *testing.T) {

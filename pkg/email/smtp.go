@@ -1,9 +1,10 @@
 package email
 
 import (
+	"time"
+
 	"github.com/HFO4/cloudreve/pkg/util"
 	"github.com/go-mail/mail"
-	"time"
 )
 
 // SMTP SMTP协议发送邮件

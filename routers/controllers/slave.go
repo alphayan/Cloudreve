@@ -2,6 +2,9 @@ package controllers
 
 import (
 	"context"
+	"net/url"
+	"strconv"
+
 	"github.com/HFO4/cloudreve/pkg/filesystem"
 	"github.com/HFO4/cloudreve/pkg/filesystem/driver/local"
 	"github.com/HFO4/cloudreve/pkg/filesystem/fsctx"
@@ -9,8 +12,6 @@ import (
 	"github.com/HFO4/cloudreve/service/admin"
 	"github.com/HFO4/cloudreve/service/explorer"
 	"github.com/gin-gonic/gin"
-	"net/url"
-	"strconv"
 )
 
 // SlaveUpload 从机文件上传

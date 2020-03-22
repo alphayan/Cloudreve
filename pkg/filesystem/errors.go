@@ -2,6 +2,7 @@ package filesystem
 
 import (
 	"errors"
+
 	"github.com/HFO4/cloudreve/pkg/serializer"
 )
 

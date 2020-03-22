@@ -3,15 +3,16 @@ package user
 import (
 	"crypto/md5"
 	"fmt"
+	"net/http"
+	"net/url"
+	"os"
+	"path/filepath"
+
 	model "github.com/HFO4/cloudreve/models"
 	"github.com/HFO4/cloudreve/pkg/serializer"
 	"github.com/HFO4/cloudreve/pkg/util"
 	"github.com/gin-gonic/gin"
 	"github.com/pquerna/otp/totp"
-	"net/http"
-	"net/url"
-	"os"
-	"path/filepath"
 )
 
 // SettingService 通用设置服务

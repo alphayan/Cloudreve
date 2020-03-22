@@ -2,6 +2,8 @@ package filesystem
 
 import (
 	"context"
+	"io"
+
 	model "github.com/HFO4/cloudreve/models"
 	"github.com/HFO4/cloudreve/pkg/conf"
 	"github.com/HFO4/cloudreve/pkg/filesystem/fsctx"
@@ -9,7 +11,6 @@ import (
 	"github.com/HFO4/cloudreve/pkg/serializer"
 	"github.com/HFO4/cloudreve/pkg/util"
 	"github.com/juju/ratelimit"
-	"io"
 )
 
 /* ============

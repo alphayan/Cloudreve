@@ -2,6 +2,7 @@ package hashid
 
 import (
 	"errors"
+
 	"github.com/HFO4/cloudreve/pkg/conf"
 )
 import "github.com/speps/go-hashids"

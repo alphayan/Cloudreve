@@ -3,13 +3,14 @@ package filesystem
 import (
 	"context"
 	"fmt"
+	"path"
+	"strings"
+
 	model "github.com/HFO4/cloudreve/models"
 	"github.com/HFO4/cloudreve/pkg/filesystem/fsctx"
 	"github.com/HFO4/cloudreve/pkg/hashid"
 	"github.com/HFO4/cloudreve/pkg/serializer"
 	"github.com/HFO4/cloudreve/pkg/util"
-	"path"
-	"strings"
 )
 
 /* =================

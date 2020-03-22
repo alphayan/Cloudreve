@@ -1,6 +1,8 @@
 package filesystem
 
 import (
+	"net/http/httptest"
+
 	"github.com/DATA-DOG/go-sqlmock"
 	model "github.com/HFO4/cloudreve/models"
 	"github.com/HFO4/cloudreve/pkg/cache"
@@ -9,7 +11,6 @@ import (
 	"github.com/HFO4/cloudreve/pkg/serializer"
 	"github.com/gin-gonic/gin"
 	"github.com/stretchr/testify/assert"
-	"net/http/httptest"
 
 	"testing"
 )

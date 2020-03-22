@@ -1,9 +1,13 @@
 package controllers
 
-import "C"
+
 import (
 	"context"
 	"fmt"
+	"net/http"
+	"net/url"
+	"strconv"
+
 	model "github.com/HFO4/cloudreve/models"
 	"github.com/HFO4/cloudreve/pkg/filesystem"
 	"github.com/HFO4/cloudreve/pkg/filesystem/driver/local"
@@ -12,9 +16,6 @@ import (
 	"github.com/HFO4/cloudreve/pkg/serializer"
 	"github.com/HFO4/cloudreve/service/explorer"
 	"github.com/gin-gonic/gin"
-	"net/http"
-	"net/url"
-	"strconv"
 )
 
 func DownloadArchive(c *gin.Context) {

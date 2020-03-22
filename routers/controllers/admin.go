@@ -1,13 +1,14 @@
 package controllers
 
 import (
+	"io"
+
 	"github.com/HFO4/cloudreve/pkg/aria2"
 	"github.com/HFO4/cloudreve/pkg/email"
 	"github.com/HFO4/cloudreve/pkg/request"
 	"github.com/HFO4/cloudreve/pkg/serializer"
 	"github.com/HFO4/cloudreve/service/admin"
 	"github.com/gin-gonic/gin"
-	"io"
 )
 
 // AdminSummary 获取管理站点概况

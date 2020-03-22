@@ -3,11 +3,12 @@ package cache
 import (
 	"errors"
 	"fmt"
+	"testing"
+	"time"
+
 	"github.com/gomodule/redigo/redis"
 	"github.com/rafaeljusto/redigomock"
 	"github.com/stretchr/testify/assert"
-	"testing"
-	"time"
 )
 
 func TestNewRedisStore(t *testing.T) {

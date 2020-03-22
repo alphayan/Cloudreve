@@ -3,10 +3,11 @@ package task
 import (
 	"context"
 	"encoding/json"
+	"os"
+
 	model "github.com/HFO4/cloudreve/models"
 	"github.com/HFO4/cloudreve/pkg/filesystem"
 	"github.com/HFO4/cloudreve/pkg/util"
-	"os"
 )
 
 // CompressTask 文件压缩任务

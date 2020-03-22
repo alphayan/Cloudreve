@@ -1,10 +1,11 @@
 package local
 
 import (
-	"github.com/stretchr/testify/assert"
 	"io/ioutil"
 	"strings"
 	"testing"
+
+	"github.com/stretchr/testify/assert"
 )
 
 func TestFileStream_GetFileName(t *testing.T) {

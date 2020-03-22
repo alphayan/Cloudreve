@@ -1,11 +1,12 @@
 package admin
 
 import (
+	"strings"
+
 	model "github.com/HFO4/cloudreve/models"
 	"github.com/HFO4/cloudreve/pkg/hashid"
 	"github.com/HFO4/cloudreve/pkg/serializer"
 	"github.com/gin-gonic/gin"
-	"strings"
 )
 
 // ShareBatchService 分享批量操作服务

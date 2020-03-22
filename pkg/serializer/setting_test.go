@@ -1,10 +1,11 @@
 package serializer
 
 import (
+	"testing"
+
 	model "github.com/HFO4/cloudreve/models"
 	"github.com/jinzhu/gorm"
 	"github.com/stretchr/testify/assert"
-	"testing"
 )
 
 func TestCheckSettingValue(t *testing.T) {

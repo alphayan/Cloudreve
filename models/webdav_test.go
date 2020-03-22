@@ -2,9 +2,10 @@ package model
 
 import (
 	"errors"
+	"testing"
+
 	"github.com/DATA-DOG/go-sqlmock"
 	"github.com/stretchr/testify/assert"
-	"testing"
 )
 
 func TestWebdav_Create(t *testing.T) {

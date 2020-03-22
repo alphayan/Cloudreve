@@ -3,6 +3,7 @@ package bootstrap
 import (
 	"encoding/json"
 	"fmt"
+
 	"github.com/HFO4/cloudreve/pkg/conf"
 	"github.com/HFO4/cloudreve/pkg/request"
 	"github.com/HFO4/cloudreve/pkg/util"
@@ -22,7 +23,6 @@ func InitApplication() {
 ================================================
 
 `)
-	go CheckUpdate()
 }
 
 type GitHubRelease struct {

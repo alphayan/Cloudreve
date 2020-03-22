@@ -3,6 +3,11 @@ package filesystem
 import (
 	"context"
 	"errors"
+	"io"
+	"os"
+	"strings"
+	"testing"
+
 	"github.com/DATA-DOG/go-sqlmock"
 	model "github.com/HFO4/cloudreve/models"
 	"github.com/HFO4/cloudreve/pkg/cache"
@@ -12,10 +17,6 @@ import (
 	"github.com/jinzhu/gorm"
 	"github.com/stretchr/testify/assert"
 	testMock "github.com/stretchr/testify/mock"
-	"io"
-	"os"
-	"strings"
-	"testing"
 )
 
 func TestFileSystem_Compress(t *testing.T) {

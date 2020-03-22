@@ -3,13 +3,14 @@ package model
 import (
 	"encoding/gob"
 	"encoding/json"
-	"github.com/HFO4/cloudreve/pkg/cache"
-	"github.com/HFO4/cloudreve/pkg/util"
-	"github.com/jinzhu/gorm"
 	"net/url"
 	"path"
 	"strconv"
 	"time"
+
+	"github.com/HFO4/cloudreve/pkg/cache"
+	"github.com/HFO4/cloudreve/pkg/util"
+	"github.com/jinzhu/gorm"
 )
 
 // Policy 存储策略

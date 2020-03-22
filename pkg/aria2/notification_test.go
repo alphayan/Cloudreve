@@ -1,9 +1,10 @@
 package aria2
 
 import (
+	"testing"
+
 	"github.com/HFO4/cloudreve/pkg/aria2/rpc"
 	"github.com/stretchr/testify/assert"
-	"testing"
 )
 
 func TestNotifier_Notify(t *testing.T) {

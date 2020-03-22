@@ -2,13 +2,14 @@ package model
 
 import (
 	"encoding/json"
+	"strconv"
+	"testing"
+	"time"
+
 	"github.com/DATA-DOG/go-sqlmock"
 	"github.com/HFO4/cloudreve/pkg/cache"
 	"github.com/jinzhu/gorm"
 	"github.com/stretchr/testify/assert"
-	"strconv"
-	"testing"
-	"time"
 )
 
 func TestGetPolicyByID(t *testing.T) {

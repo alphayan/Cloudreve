@@ -1,6 +1,9 @@
 package user
 
 import (
+	"net/url"
+	"strings"
+
 	model "github.com/HFO4/cloudreve/models"
 	"github.com/HFO4/cloudreve/pkg/auth"
 	"github.com/HFO4/cloudreve/pkg/email"
@@ -9,8 +12,6 @@ import (
 	"github.com/HFO4/cloudreve/pkg/util"
 	"github.com/gin-gonic/gin"
 	"github.com/mojocn/base64Captcha"
-	"net/url"
-	"strings"
 )
 
 // UserRegisterService 管理用户注册的服务

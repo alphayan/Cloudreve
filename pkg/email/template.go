@@ -2,6 +2,7 @@ package email
 
 import (
 	"fmt"
+
 	model "github.com/HFO4/cloudreve/models"
 	"github.com/HFO4/cloudreve/pkg/util"
 )

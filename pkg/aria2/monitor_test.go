@@ -2,6 +2,9 @@ package aria2
 
 import (
 	"errors"
+	"testing"
+	"time"
+
 	"github.com/DATA-DOG/go-sqlmock"
 	model "github.com/HFO4/cloudreve/models"
 	"github.com/HFO4/cloudreve/pkg/aria2/rpc"
@@ -12,8 +15,6 @@ import (
 	"github.com/jinzhu/gorm"
 	"github.com/stretchr/testify/assert"
 	testMock "github.com/stretchr/testify/mock"
-	"testing"
-	"time"
 )
 
 type InstanceMock struct {

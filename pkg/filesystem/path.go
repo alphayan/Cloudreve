@@ -1,9 +1,10 @@
 package filesystem
 
 import (
+	"path"
+
 	model "github.com/HFO4/cloudreve/models"
 	"github.com/HFO4/cloudreve/pkg/util"
-	"path"
 )
 
 /* =================

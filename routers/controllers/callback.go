@@ -1,12 +1,13 @@
 package controllers
 
 import (
+	"net/url"
+	"strconv"
+
 	"github.com/HFO4/cloudreve/pkg/serializer"
 	"github.com/HFO4/cloudreve/pkg/util"
 	"github.com/HFO4/cloudreve/service/callback"
 	"github.com/gin-gonic/gin"
-	"net/url"
-	"strconv"
 )
 
 // RemoteCallback 远程上传回调

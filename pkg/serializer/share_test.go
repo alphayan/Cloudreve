@@ -1,11 +1,12 @@
 package serializer
 
 import (
+	"testing"
+	"time"
+
 	model "github.com/HFO4/cloudreve/models"
 	"github.com/jinzhu/gorm"
 	"github.com/stretchr/testify/assert"
-	"testing"
-	"time"
 )
 
 func TestBuildShareList(t *testing.T) {

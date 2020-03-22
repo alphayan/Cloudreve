@@ -1,13 +1,14 @@
 package middleware
 
 import (
+	"net/http"
+	"net/http/httptest"
+	"testing"
+
 	"github.com/HFO4/cloudreve/pkg/conf"
 	"github.com/HFO4/cloudreve/pkg/util"
 	"github.com/gin-gonic/gin"
 	"github.com/stretchr/testify/assert"
-	"net/http"
-	"net/http/httptest"
-	"testing"
 )
 
 func TestSession(t *testing.T) {

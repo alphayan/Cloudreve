@@ -1,10 +1,11 @@
 package model
 
 import (
+	"testing"
+
 	"github.com/HFO4/cloudreve/pkg/conf"
 	"github.com/jinzhu/gorm"
 	"github.com/stretchr/testify/assert"
-	"testing"
 )
 
 func TestMigration(t *testing.T) {

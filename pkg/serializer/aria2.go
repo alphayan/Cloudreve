@@ -1,9 +1,10 @@
 package serializer
 
 import (
+	"path"
+
 	model "github.com/HFO4/cloudreve/models"
 	"github.com/HFO4/cloudreve/pkg/aria2/rpc"
-	"path"
 )
 
 // DownloadListResponse 下载列表响应条目

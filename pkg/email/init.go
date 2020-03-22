@@ -1,9 +1,10 @@
 package email
 
 import (
+	"sync"
+
 	model "github.com/HFO4/cloudreve/models"
 	"github.com/HFO4/cloudreve/pkg/util"
-	"sync"
 )
 
 // Client 默认的邮件发送客户端

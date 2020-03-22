@@ -1,12 +1,13 @@
 package auth
 
 import (
-	"github.com/HFO4/cloudreve/pkg/util"
-	"github.com/stretchr/testify/assert"
 	"io/ioutil"
 	"net/http"
 	"strings"
 	"testing"
+
+	"github.com/HFO4/cloudreve/pkg/util"
+	"github.com/stretchr/testify/assert"
 )
 
 func TestSignURI(t *testing.T) {

@@ -3,14 +3,16 @@ package filesystem
 import (
 	"context"
 	"errors"
+	"fmt"
+	"io/ioutil"
+	"strings"
+
 	model "github.com/HFO4/cloudreve/models"
 	"github.com/HFO4/cloudreve/pkg/conf"
 	"github.com/HFO4/cloudreve/pkg/filesystem/fsctx"
 	"github.com/HFO4/cloudreve/pkg/request"
 	"github.com/HFO4/cloudreve/pkg/serializer"
 	"github.com/HFO4/cloudreve/pkg/util"
-	"io/ioutil"
-	"strings"
 )
 
 // Hook 钩子函数
@@ -40,8 +42,10 @@ func (fs *FileSystem) CleanHooks(name string) {
 // Trigger 触发钩子,遇到第一个错误时
 // 返回错误，后续钩子不会继续执行
 func (fs *FileSystem) Trigger(ctx context.Context, name string) error {
+	fmt.Println("name:",name)
 	if hooks, ok := fs.Hooks[name]; ok {
 		for _, hook := range hooks {
+			fmt.Printf("%#v\n",hook)
 			err := hook(ctx, fs)
 			if err != nil {
 				util.Log().Warning("钩子执行失败：%s", err)

@@ -1,9 +1,10 @@
 package serializer
 
 import (
+	"time"
+
 	model "github.com/HFO4/cloudreve/models"
 	"github.com/HFO4/cloudreve/pkg/hashid"
-	"time"
 )
 
 // Share 分享信息序列化

@@ -2,6 +2,10 @@ package filesystem
 
 import (
 	"context"
+	"io"
+	"os"
+	"path"
+
 	model "github.com/HFO4/cloudreve/models"
 	"github.com/HFO4/cloudreve/pkg/cache"
 	"github.com/HFO4/cloudreve/pkg/filesystem/driver/local"
@@ -10,9 +14,6 @@ import (
 	"github.com/HFO4/cloudreve/pkg/serializer"
 	"github.com/HFO4/cloudreve/pkg/util"
 	"github.com/gin-gonic/gin"
-	"io"
-	"os"
-	"path"
 )
 
 /* ================

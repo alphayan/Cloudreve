@@ -2,11 +2,12 @@ package routers
 
 import (
 	"database/sql"
+	"testing"
+
 	"github.com/DATA-DOG/go-sqlmock"
 	model "github.com/HFO4/cloudreve/models"
 	"github.com/gin-gonic/gin"
 	"github.com/jinzhu/gorm"
-	"testing"
 )
 
 var mock sqlmock.Sqlmock

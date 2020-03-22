@@ -3,11 +3,12 @@ package template
 import (
 	"context"
 	"errors"
+	"io"
+	"net/url"
+
 	model "github.com/HFO4/cloudreve/models"
 	"github.com/HFO4/cloudreve/pkg/filesystem/response"
 	"github.com/HFO4/cloudreve/pkg/serializer"
-	"io"
-	"net/url"
 )
 
 // Driver 适配器模板

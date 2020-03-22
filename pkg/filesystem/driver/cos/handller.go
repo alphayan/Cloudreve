@@ -8,6 +8,11 @@ import (
 	"encoding/json"
 	"errors"
 	"fmt"
+	"io"
+	"net/http"
+	"net/url"
+	"time"
+
 	model "github.com/HFO4/cloudreve/models"
 	"github.com/HFO4/cloudreve/pkg/filesystem/fsctx"
 	"github.com/HFO4/cloudreve/pkg/filesystem/response"
@@ -15,10 +20,6 @@ import (
 	"github.com/HFO4/cloudreve/pkg/serializer"
 	"github.com/google/go-querystring/query"
 	cossdk "github.com/tencentyun/cos-go-sdk-v5"
-	"io"
-	"net/http"
-	"net/url"
-	"time"
 )
 
 // UploadPolicy 腾讯云COS上传策略

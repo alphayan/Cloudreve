@@ -2,6 +2,9 @@ package user
 
 import (
 	"fmt"
+	"net/url"
+	"strings"
+
 	"github.com/HFO4/cloudreve/models"
 	"github.com/HFO4/cloudreve/pkg/cache"
 	"github.com/HFO4/cloudreve/pkg/email"
@@ -11,8 +14,6 @@ import (
 	"github.com/gin-gonic/gin"
 	"github.com/mojocn/base64Captcha"
 	"github.com/pquerna/otp/totp"
-	"net/url"
-	"strings"
 )
 
 // UserLoginService 管理用户登录的服务

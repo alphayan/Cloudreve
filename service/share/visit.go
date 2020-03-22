@@ -3,6 +3,9 @@ package share
 import (
 	"context"
 	"fmt"
+	"net/http"
+	"path"
+
 	model "github.com/HFO4/cloudreve/models"
 	"github.com/HFO4/cloudreve/pkg/filesystem"
 	"github.com/HFO4/cloudreve/pkg/filesystem/fsctx"
@@ -11,8 +14,6 @@ import (
 	"github.com/HFO4/cloudreve/pkg/util"
 	"github.com/HFO4/cloudreve/service/explorer"
 	"github.com/gin-gonic/gin"
-	"net/http"
-	"path"
 )
 
 // ShareUserGetService 获取用户的分享服务

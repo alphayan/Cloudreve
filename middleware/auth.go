@@ -5,6 +5,9 @@ import (
 	"context"
 	"crypto/md5"
 	"fmt"
+	"io/ioutil"
+	"net/http"
+
 	"github.com/HFO4/cloudreve/models"
 	"github.com/HFO4/cloudreve/pkg/auth"
 	"github.com/HFO4/cloudreve/pkg/cache"
@@ -16,8 +19,6 @@ import (
 	"github.com/gin-contrib/sessions"
 	"github.com/gin-gonic/gin"
 	"github.com/qiniu/api.v7/v7/auth/qbox"
-	"io/ioutil"
-	"net/http"
 )
 
 // SignRequired 验证请求签名

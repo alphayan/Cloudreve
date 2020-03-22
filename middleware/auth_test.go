@@ -3,6 +3,12 @@ package middleware
 import (
 	"database/sql"
 	"errors"
+	"io/ioutil"
+	"net/http"
+	"net/http/httptest"
+	"strings"
+	"testing"
+
 	"github.com/DATA-DOG/go-sqlmock"
 	"github.com/HFO4/cloudreve/models"
 	"github.com/HFO4/cloudreve/pkg/auth"
@@ -13,11 +19,6 @@ import (
 	"github.com/jinzhu/gorm"
 	"github.com/qiniu/api.v7/v7/auth/qbox"
 	"github.com/stretchr/testify/assert"
-	"io/ioutil"
-	"net/http"
-	"net/http/httptest"
-	"strings"
-	"testing"
 )
 
 var mock sqlmock.Sqlmock

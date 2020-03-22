@@ -3,12 +3,13 @@ package task
 import (
 	"context"
 	"encoding/json"
-	model "github.com/HFO4/cloudreve/models"
-	"github.com/HFO4/cloudreve/pkg/filesystem"
-	"github.com/HFO4/cloudreve/pkg/util"
 	"os"
 	"path"
 	"path/filepath"
+
+	model "github.com/HFO4/cloudreve/models"
+	"github.com/HFO4/cloudreve/pkg/filesystem"
+	"github.com/HFO4/cloudreve/pkg/util"
 )
 
 // TransferTask 文件中转任务

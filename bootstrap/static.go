@@ -1,11 +1,12 @@
 package bootstrap
 
 import (
+	"net/http"
+
 	"github.com/HFO4/cloudreve/pkg/util"
 	_ "github.com/HFO4/cloudreve/statik"
 	"github.com/gin-contrib/static"
 	"github.com/rakyll/statik/fs"
-	"net/http"
 )
 
 type GinFS struct {

@@ -2,12 +2,13 @@ package explorer
 
 import (
 	"context"
+	"strings"
+
 	model "github.com/HFO4/cloudreve/models"
 	"github.com/HFO4/cloudreve/pkg/filesystem"
 	"github.com/HFO4/cloudreve/pkg/hashid"
 	"github.com/HFO4/cloudreve/pkg/serializer"
 	"github.com/gin-gonic/gin"
-	"strings"
 )
 
 // ItemSearchService 文件搜索服务

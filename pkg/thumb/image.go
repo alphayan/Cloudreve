@@ -3,8 +3,6 @@ package thumb
 import (
 	"errors"
 	"fmt"
-	model "github.com/HFO4/cloudreve/models"
-	"github.com/HFO4/cloudreve/pkg/util"
 	"image"
 	"image/gif"
 	"image/jpeg"
@@ -12,6 +10,9 @@ import (
 	"io"
 	"path/filepath"
 	"strings"
+
+	model "github.com/HFO4/cloudreve/models"
+	"github.com/HFO4/cloudreve/pkg/util"
 
 	"github.com/nfnt/resize"
 )

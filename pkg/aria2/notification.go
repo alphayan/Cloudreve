@@ -1,8 +1,9 @@
 package aria2
 
 import (
-	"github.com/HFO4/cloudreve/pkg/aria2/rpc"
 	"sync"
+
+	"github.com/HFO4/cloudreve/pkg/aria2/rpc"
 )
 
 // Notifier aria2实践通知处理
