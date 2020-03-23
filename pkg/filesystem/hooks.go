@@ -42,10 +42,10 @@ func (fs *FileSystem) CleanHooks(name string) {
 // Trigger 触发钩子,遇到第一个错误时
 // 返回错误，后续钩子不会继续执行
 func (fs *FileSystem) Trigger(ctx context.Context, name string) error {
-	fmt.Println("name:",name)
+	fmt.Println("name:", name)
 	if hooks, ok := fs.Hooks[name]; ok {
 		for _, hook := range hooks {
-			fmt.Printf("%#v\n",hook)
+			fmt.Printf("%#v\n", hook)
 			err := hook(ctx, fs)
 			if err != nil {
 				util.Log().Warning("钩子执行失败：%s", err)

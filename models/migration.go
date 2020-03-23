@@ -232,7 +232,7 @@ func addDefaultGroups() {
 
 func addDefaultUser() {
 	_, err := GetUserByID(1)
-	password := "123456"
+	password := util.RandStringRunes(8)
 
 	// 未找到初始用户时，则创建
 	if gorm.IsRecordNotFoundError(err) {

@@ -21,8 +21,8 @@ func InitApplication() {
 
    V` + conf.BackendVersion + `  Commit #` + conf.LastCommit + `  Pro=` + conf.IsPro + `
 ================================================
-
 `)
+	go CheckUpdate()
 }
 
 type GitHubRelease struct {
